@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rural Healthcare Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'health-blue': '#0066cc',
+                        'health-green': '#00a86b',
+                        'health-light': '#f0f8ff'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-6">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-health-blue rounded-lg flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h1 class="ml-3 text-2xl font-bold text-gray-900">Rural Healthcare Platform</h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-health-blue transition-colors">Features</a>
+                    <a href="#about" class="text-gray-600 hover:text-health-blue transition-colors">About</a>
+                    <a href="#contact" class="text-gray-600 hover:text-health-blue transition-colors">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-health-blue to-health-green text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6 text-balance">
+                Bridging Healthcare Gaps in Rural Communities
+            </h2>
+            <p class="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto text-pretty">
+                Comprehensive digital healthcare solutions designed specifically for rural areas, connecting patients with quality care regardless of location.
+            </p>
+            <button class="bg-white text-health-blue px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg">
+                Explore Features
+            </button>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Comprehensive Healthcare Solutions
+                </h3>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Nine integrated features designed to transform rural healthcare delivery and accessibility.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1: Video/Audio Consultation -->
+                <div class="bg-health-light rounded-xl p-6 border border-blue-100 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-health-blue rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Video/Audio Consultation</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        Secure, low-bandwidth video and audio consultations that connect rural patients with doctors instantly — eliminating long travel and wait times.
+                    </p>
+                </div>
+
+                <!-- Feature 2: Multilingual Availability -->
+                <div class="bg-green-50 rounded-xl p-6 border border-green-100 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-health-green rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Multilingual Availability</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        Smart multilingual interface with real-time translation support, so patients can speak in Punjabi/Hindi and doctors can reply in English — breaking down language barriers.
+                    </p>
+                </div>
+
+                <!-- Feature 3: Pharmacy Stock Tracking -->
+                <div class="bg-purple-50 rounded-xl p-6 border border-purple-100 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Pharmacy Stock Tracking System</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        A live medicine inventory dashboard for local pharmacies. Tracks availability, flags low stock, and automates restocking alerts to ensure no patient goes without medicines.
+                    </p>
+                </div>
+
+                <!-- Feature 4: AI Symptom Checker -->
+                <div class="bg-orange-50 rounded-xl p-6 border border-orange-100 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">AI Symptom Checker / Chatbot</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        An AI-powered chatbot for first-level triage. Patients describe their symptoms, and the system suggests possible causes or directs them to the right specialist — reducing clinic overload.
+                    </p>
+                </div>
+
+                <!-- Feature 5: Prescription Reminders -->
+                <div class="bg-teal-50 rounded-xl p-6 border border-teal-100 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-teal-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Prescription to Reminders – Never Miss a Dose</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        Converts prescriptions into daily reminders. Patients get SMS/app alerts in their local language for every dose, improving treatment adherence and recovery outcomes.
+                    </p>
+                </div>
+
+                <!-- Feature 6: Digital Health Records -->
+                <div class="bg-indigo-50 rounded-xl p-6 border border-indigo-100 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Digital Health Records</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        A centralized, secure platform that stores patient history, test results, and prescriptions — accessible to both doctors and patients anytime, anywhere.
+                    </p>
+                </div>
+
+                <!-- Feature 7: Doctor Pool Scheduler -->
+                <div class="bg-pink-50 rounded-xl p-6 border border-pink-100 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-pink-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3a2 2 0 012-2h4a2 2 0 012 2v4m-6 0V6a2 2 0 012-2h4a2 2 0 012 2v1m-6 0h6m-6 0l-2 9a2 2 0 002 2h8a2 2 0 002-2l-2-9m-8 0V9a2 2 0 012-2h4a2 2 0 012 2v0"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Doctor Pool Scheduler</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        An intelligent scheduling system that balances doctor availability across teleconsultations and clinics — minimizing idle time and maximizing patient coverage.
+                    </p>
+                </div>
+
+                <!-- Feature 8: Emergency Alert App -->
+                <div class="bg-red-50 rounded-xl p-6 border border-red-100 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.732-.833-2.464 0L4.35 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Emergency Alert App with Location Sharing</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        A one-tap SOS system that shares live patient location with doctors, ambulances, and family members — ensuring quick response in medical emergencies.
+                    </p>
+                </div>
+
+                <!-- Feature 9: Digital Health Card -->
+                <div class="bg-yellow-50 rounded-xl p-6 border border-yellow-100 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-yellow-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Digital Health Card (QR-based)</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        QR-based health identity cards for every patient. Scanning reveals essential details like blood group, allergies, and last checkup — life-saving during emergencies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-gray-900 text-white py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-3xl md:text-4xl font-bold mb-6 text-balance">
+                Ready to Transform Rural Healthcare?
+            </h3>
+            <p class="text-xl text-gray-300 mb-8 text-pretty">
+                Join us in bridging the healthcare gap and bringing quality medical care to every rural community.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-health-blue hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
+                    Get Started Today
+                </button>
+                <button class="border border-gray-600 hover:border-gray-400 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
+                    Learn More
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-health-blue rounded-lg flex items-center justify-center">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                            </svg>
+                        </div>
+                        <span class="ml-2 text-xl font-bold text-gray-900">Rural Healthcare Platform</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Empowering rural communities with accessible, comprehensive healthcare solutions through innovative technology.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-4">Features</h4>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>Teleconsultation</li>
+                        <li>AI Diagnosis</li>
+                        <li>Digital Records</li>
+                        <li>Emergency Alerts</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>Help Center</li>
+                        <li>Contact Us</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Service</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 mt-8 pt-8 text-center text-gray-600">
+                <p>&copy; 2025 Rural Healthcare Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
